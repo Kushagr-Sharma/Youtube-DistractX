@@ -1,0 +1,23 @@
+{
+  "name": "Youtube Recommendation Blocker",
+  "manifest_version": 3,
+  "version": "1.0",
+  "author": "Kushagr Sharma",
+  "description": "Youtube Recommendation Blocker",
+  "content_scripts": [
+    {
+      "js": [
+        "content.js"
+      ],
+      "matches": [
+        "*://*.youtube.com/*"
+      ]
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "contentSettings",
+    "storage",
+    "tabs"
+  ]
+}
